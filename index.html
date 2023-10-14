@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H_BlaZe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: rgb(50, 50, 50);
+            
+        }
+        #navbar{
+            font-family: 'Space Mono';
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: black;
+            width: 100%;
+            height: 100%;
+        }
+        .nav{
+            padding: 5px;
+            margin: 10px;
+            background-color: rgba(50, 0, 100, 0.37);
+            border-radius: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            /* text-decoration: none; */
+            color: rgba(255, 255, 255, 0.502);
+            text-decoration: none;
+        }
+        .nav:hover{
+            background-color: rgb(75, 23, 99);
+            cursor: pointer;
+        }
+        #wlcm{
+            margin-top: 100px;
+            margin-bottom: 0px;
+            margin-left: 10px;
+            color: white;
+            font-family: 'Space Mono';
+        }
+        #wlcm2{
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: 10px;
+            color: white;
+            font-family: 'Space Mono';
+        }
+        h2{
+            color: rgb(105, 32, 139);
+            font-size: 100px;
+            margin-top: -20px;
+            margin-left: 10px;
+            margin-bottom: 150px;
+            font-family: 'Space Mono';
+        }
+        #main{
+            display: flex;
+            flex-direction: row;
+            background-color: black;
+            border-radius: 0px 0px 15px 15px;
+            width: 100%;
+            height: 100%;
+            
+        }
+        #right{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+        #btns{
+            display: flex;
+            flex-direction: row;
+        }
+        #left{
+            width: 50%;
+        }
+        #hb_id{
+            margin-top: 130px;
+            width: 400px;
+            height: 35px;
+            color: rgb(105, 32, 139);
+            text-align: center;
+            font-family: 'Space Mono';
+        }
+        #hb_id:hover{
+            background-color: rgb(21, 1, 29);
+        }
+        #hb_pas{
+            margin-top: 30px;
+            width: 400px;
+            height: 35px;
+            color: rgb(105, 32, 139);
+            text-align: center  ;
+            font-family: 'Space Mono';
+        }
+        #hb_pas:hover{
+            background-color: rgb(21, 1, 29) ;
+        }
+        #subbtn{
+            background-color:  rgb(105, 32, 139);
+            border: 0px;
+            border-radius: 5px;
+            color: black;
+            width: 170px;
+            height: 30px;
+            margin-left: 20px;
+            margin-top: 30px;
+            font-family: 'Space Mono';
+        }
+        #subbtn:hover{
+            cursor: pointer;
+            background-color:  rgb(133, 59, 168);
+            color: wheat;
+            
+        }
+        #crtbtn{
+            background-color:  rgb(105, 32, 139);
+            border: 0px;
+            border-radius: 5px;
+            color: black;
+            width: 170px;
+            height: 30px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 30px;
+            font-family: 'Space Mono';
+        }
+        #crtbtn:hover{
+            cursor: pointer;
+            background-color:  rgb(133, 59, 168);
+            color: wheat;
+        }
+        input{
+            background-color: black;
+            border: 1px solid blueviolet;
+            border-radius: 12px;
+        }
+        #socialmain{
+            display: flex;
+            flex-direction: column;
+            background-color: black;
+            margin-top: 30px;
+            border-radius: 15px;
+            margin-top: 10px;
+        }
+        #social{
+            color: rgb(105, 32, 139);
+            font-family: 'Space Mono';
+            font-size: 50px;
+        }
+        #top{
+            display: flex;
+            justify-content: center;
+        }
+        #bottom{
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            padding: 10px;
+
+        }
+        p{
+            color: white;
+        }
+
+        #rev{
+            font-family: 'Space Mono';
+            font-size: 15px;
+            padding: 10px;
+            background-color: rgb(22,22,22);
+            border-radius: 20px;
+            margin: 10px;
+        }
+        #toppart{
+            display: flex;
+            justify-content: center;
+        }
+        #partners{
+            font-family: 'Space Mono';
+            display: flex;
+            flex-direction: column;
+            background-color: black;
+            margin-top: 10px;
+            border-radius: 15px;
+            
+        }
+        #partnertxt{
+            color: rgb(105, 32, 139);
+            font-family: 'Space Mono';
+            font-size: 50px;
+        }
+        #bottompart{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        #design{
+            margin-top: -400px;
+            margin-left: 100px;
+            mix-blend-mode:lighten;
+            rotate: 40deg;
+            width: 500px;
+            height: auto;
+        }
+        #name{
+            padding-left: 70px;
+            padding-right: 70px;
+            padding-bottom: 50px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <li class="nav"><a href="">Home</a></li>
+        <li class="nav"><a href="">Social</a></li>
+        <li class="nav"><a href="">Events</a></li>
+        <li class="nav"><a href="">Contact</a></li>
+    </div>
+    <!-- home about services contact us
+    class- .
+    id - # -->
+    <div id="main">
+        <div id="left">
+            <h1 id="wlcm">f i n d &nbsp; n e w s</h1>
+            <h1 id="wlcm2">y o u &nbsp; c a n &nbsp; t r u s t</h1>
+            <h2>@H_BlaZe</h2>
+            <img id="design" src="https://i.ibb.co/y8qNFfX/Whats-App-Image-2023-10-14-at-2-21-47-PM-removebg-preview.png" alt="" >
+        </div>
+
+        <div id="right">
+            <div id="userid">
+                <label for="textbox"></label>
+                <input type="text" id="hb_id" name="hb_bx" placeholder="Enter Username">
+            </div>
+            <div id="userpass">
+                <label for="textbox"></label>
+                <input type="password" id="hb_pas" name="hb_ps" placeholder="Enter Password">
+            </div>
+            <div id="btns">
+                <div id="usersub">
+                    <button type = "button" id="subbtn">Login</button>
+                </div>
+                
+                <div id="createbtn">
+                    <button type = "button" id="crtbtn">Create Account</button>
+                </div>
+            </div>
+            
+            </div>
+        
+    </div>
+    <div id="socialmain">
+        <div id="top">
+            <h1 id="social"> From our audience </h1>
+        </div>
+        <div id="bottom">
+            <div id="rev">
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>
+                    I have been using this website for quite some time now, and I must say it's my go-to source for authentic news. 
+                    The content is always well-researched, unbiased, and up-to-date. 
+                    They cover a wide range of topics, and I appreciate the diverse perspectives they offer. 
+                    The layout is user-friendly, and I can easily navigate through the sections I'm interested in. 
+                    If you're looking for a trustworthy news site, this is it.
+                </p>
+                <p>~Anonymous0015</p>
+            </div>
+            <div id="rev">
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>
+                    I am genuinely impressed with the journalistic standards maintained by this website. 
+                    The articles are well-written, fact-checked, and provide in-depth coverage of various topics. 
+                    The breaking news alerts are prompt, keeping me informed about current events. 
+                    They also include expert opinions and analyses that add valuable context to the stories. 
+                    The commitment to truth and authenticity is evident in every piece. 
+                    It's a breath of fresh air in the world of online news.
+                </p>
+                <p>~Anonymous0150</p>
+            </div>
+            <div id="rev">
+                <p>⭐⭐⭐⭐</p>
+                <p>
+                    I rely on this website daily for my news updates, and it has become an integral part of my routine. 
+                    The information provided is trustworthy, and I appreciate the absence of sensationalism or clickbait headlines. 
+                    The website's dedication to authenticity is evident through their well-crafted articles. 
+                    The comment sections are moderated, ensuring a respectful and constructive discussion among readers. 
+                    For those who value accuracy and reliability, this is the perfect news source.
+                </p>
+                <p>~Anonymous0290</p>
+            </div>
+            
+        </div>
+    </div>
+    <div id="partners">
+        <div id="toppart">
+            <h1 id="partnertxt">Our  Partners</h1>
+        </div>
+        <div id="bottompart">
+            ,<div id="name">
+                <img src="https://static.vecteezy.com/system/resources/previews/024/806/527/original/infosys-logo-transparent-free-png.png" alt="" style="width: 200px; height: auto; opacity: 80%;">
+            </div>
+            <div id="name">
+                <img src="https://www.nestroots.com/cdn/shop/files/1_18a6cb5e-8a4e-4afe-a495-47508459e4e9_300X.png?v=1673004202" alt="" style="width: 200px; height: auto; opacity: 80%;">
+            </div>
+            <div id="name">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Bharti_Airtel_Logo.svg/905px-Bharti_Airtel_Logo.svg.png" alt="" style="width: 200px; height: auto;">
+            </div>
+        </div>
+    </div>
+    
+
+    
+    
+</body>
+</html>
